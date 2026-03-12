@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografis Sejarah UNSRAT - Premium Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:italic,wght@700&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #0f172a; /* Slate 900 */
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #1e40af, #0f172a);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #1e40af, #fbbf24, #1e40af);
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-200">
+
+    <!-- MAIN WRAPPER -->
+    <div class="max-w-5xl mx-auto my-10 shadow-2xl overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800">
+        
+        <!-- HEADER SECTION -->
+        <header class="relative py-24 px-10 text-center hero-gradient overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+                <div class="absolute top-10 left-10 w-32 h-32 rounded-full bg-blue-500 blur-3xl"></div>
+                <div class="absolute bottom-10 right-10 w-48 h-48 rounded-full bg-yellow-500 blur-3xl"></div>
+            </div>
+
+            <div class="relative z-10">
+                <div class="mb-8 inline-block p-1 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20">
+                    <img src="logo.png" alt="Logo UNSRAT" class="h-28 mx-auto drop-shadow-2xl">
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-4">
+                    SEJARAH <span class="text-gradient">UNSRAT</span>
+                </h1>
+                <p class="text-2xl font-serif italic text-blue-200 mb-6">"Si Tou Timou Tumou Tou"</p>
+                <div class="flex justify-center items-center gap-4 text-xs font-bold uppercase tracking-[0.3em] text-slate-400">
+                    <span>Manado, Indonesia</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- BIOGRAPHY SECTION (NEW) -->
+        <section class="p-10 md:p-16 border-b border-slate-800 bg-slate-950/30">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="relative shrink-0">
+                    <div class="absolute -inset-4 bg-blue-600/20 blur-2xl rounded-full"></div>
+                    <div class="w-56 h-72 glass rounded-[2rem] overflow-hidden border-2 border-white/10 relative z-10 p-2 shadow-2xl">
+                        <img src="sam ratulangi.jpg" alt="Dr. Sam Ratulangi" class="w-full h-full object-cover rounded-[1.5rem] grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+                
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="text-3xl font-bold text-white mb-2">Dr. G.S.S.J. Ratulangi</h2>
+                    <p class="text-yellow-500 font-bold tracking-widest text-xs uppercase mb-6 italic">"Sam" • Pahlawan Nasional & Maha Putera Indonesia</p>
+                    
+                    <div class="space-y-4 text-slate-400 text-sm md:text-base leading-relaxed">
+                        <p>
+                            Lahir di <strong>Tondano, 5 November 1890</strong>, Dr. Gerungan Saul Samuel Jacob Ratulangi adalah pejuang kemerdekaan dari tanah Minahasa yang mendedikasikan hidupnya untuk pendidikan dan kemanusiaan.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 py-4">
+                            <div class="glass p-3 rounded-xl border-l-2 border-blue-500">
+                                <span class="block text-[10px] text-slate-500 uppercase">Wafat</span>
+                                <span class="text-white font-medium">30 Juni 1949</span>
+                            </div>
+                            <div class="glass p-3 rounded-xl border-l-2 border-yellow-500">
+                                <span class="block text-[10px] text-slate-500 uppercase">Gelar</span>
+                                <span class="text-white font-medium">Pahlawan Nasional</span>
+                            </div>
+                        </div>
+                        <p class="italic bg-blue-600/10 p-4 rounded-2xl border border-blue-500/20 text-blue-100">
+                            "Si Tou Timou Tumou Tou" — Manusia hidup untuk memanusiakan orang lain. Filosofi ini menekankan bahwa eksistensi kita baru bermakna saat kita mampu mendidik dan memberdayakan sesama.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section class="p-10 md:p-20 relative overflow-hidden">
+            <h2 class="text-3xl font-bold mb-20 text-center tracking-tight">Evolusi Perjalanan <span class="text-blue-500">Waktu</span></h2>
+            
+            <div class="relative timeline-line">
+                <!-- 1954 -->
+                <div class="relative mb-20 md:flex items-center justify-between w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-blue-600 rounded-full border-4 border-slate-900 z-20"></div>
+                    <div class="ml-12 md:ml-0 md:w-5/12 glass p-6 rounded-3xl border-l-4 border-l-blue-600">
+                        <span class="text-yellow-500 font-bold text-sm">1954</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Universitas Pinaesaan</h3>
+                        <p class="text-slate-400 text-sm mt-2">Cikal bakal di Tondano dengan fokus awal pada Fakultas Hukum (1 Oktober 1954).</p>
+                    </div>
+                </div>
+
+                <!-- 1957 -->
+                <div class="relative mb-20 md:flex flex-row-reverse items-center justify-between w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-blue-500 rounded-full border-4 border-slate-900 z-20"></div>
+                    <div class="ml-12 md:ml-0 md:w-5/12 glass p-6 rounded-3xl border-r-0 md:border-r-4 md:border-r-blue-500 md:text-right">
+                        <span class="text-yellow-500 font-bold text-sm">1957</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Universitas Permesta</h3>
+                        <p class="text-slate-400 text-sm mt-2">Didirikan di Manado pada 23 September 1957 sebagai embrio masa depan UNSRAT.</p>
+                    </div>
+                </div>
+
+                <!-- 1958 -->
+                <div class="relative mb-20 md:flex items-center justify-between w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                    <div class="ml-12 md:ml-0 md:w-5/12 glass p-6 rounded-3xl border-l-4 border-l-blue-400">
+                        <span class="text-yellow-500 font-bold text-sm">1958</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Perguruan Tinggi Manado</h3>
+                        <p class="text-slate-400 text-sm mt-2">Lahirnya PTM dengan 4 Fakultas pilar: Hukum, Ekonomi, Sastra, & Tatapraja.</p>
+                    </div>
+                </div>
+
+                <!-- 1961 -->
+                <div class="relative mb-20 md:flex flex-row-reverse items-center justify-between w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-5 h-5 bg-yellow-500 rounded-full border-4 border-slate-900 z-20"></div>
+                    <div class="ml-12 md:ml-0 md:w-5/12 glass p-6 rounded-3xl border-r-0 md:border-r-4 md:border-r-yellow-500 md:text-right">
+                        <span class="text-yellow-500 font-bold text-sm">1961</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Status Negeri (UNISUT)</h3>
+                        <p class="text-slate-400 text-sm mt-2">Resmi menjadi Universitas Negeri pada 4 Juli 1961 dengan lima fakultas awal.</p>
+                    </div>
+                </div>
+
+                <!-- 1965 -->
+                <div class="relative md:flex items-center justify-between w-full">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-8 h-8 bg-white rounded-full border-4 border-blue-600 z-20 shadow-[0_0_20px_rgba(30,64,175,0.5)]"></div>
+                    <div class="ml-12 md:ml-0 md:w-5/12 bg-blue-600 p-8 rounded-[2rem] shadow-xl transform md:scale-110">
+                        <span class="text-blue-200 font-bold text-sm">14 September 1965</span>
+                        <h3 class="text-2xl font-black text-white mt-1 uppercase">UNSRAT</h3>
+                        <p class="text-blue-100 text-sm mt-2 italic font-medium leading-relaxed">
+                            Resmi menggunakan nama Universitas Sam Ratulangi atas pengesahan Presiden RI No. 277.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FACULTIES RUMPUN -->
+        <section class="px-10 py-20 bg-slate-950/50">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Fakultas & Program</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item loop -->
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">01</div>
+                        <span class="font-semibold text-slate-200">Kedokteran</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">02</div>
+                        <span class="font-semibold text-slate-200">Teknik</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">03</div>
+                        <span class="font-semibold text-slate-200">Pertanian</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">04</div>
+                        <span class="font-semibold text-slate-200">Peternakan</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">05</div>
+                        <span class="font-semibold text-slate-200">Perikanan & Ilmu Kelautan</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">06</div>
+                        <span class="font-semibold text-slate-200">Ekonomi</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">07</div>
+                        <span class="font-semibold text-slate-200">Hukum</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">08</div>
+                        <span class="font-semibold text-slate-200">Ilmu Sosial & Politik</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">09</div>
+                        <span class="font-semibold text-slate-200">Sastra</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">10</div>
+                        <span class="font-semibold text-slate-200">MIPA</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl hover:bg-white/10 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-500 font-bold group-hover:bg-blue-500 group-hover:text-white transition-colors">11</div>
+                        <span class="font-semibold text-slate-200">Kesehatan Masyarakat</span>
+                    </div>
+                </div>
+                <div class="group glass p-5 rounded-2xl bg-yellow-500/10 border-yellow-500/30 transition-all cursor-default">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-yellow-500 text-slate-900 flex items-center justify-center font-bold">12</div>
+                        <span class="font-semibold text-yellow-500">Program Pascasarjana</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HALL OF LEADERS -->
+        <section class="p-10 md:p-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">Para <span class="text-yellow-500">Pemimpin</span> Institusi</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">01</span>
+                    <span class="flex-1 font-semibold text-sm">J. A. Losung, SH</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1961-64</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">02</span>
+                    <span class="flex-1 font-semibold text-sm">R. A. B. Massie, SH</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1964-65</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">03</span>
+                    <span class="flex-1 font-semibold text-sm">dr. F. H. Palilingan</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1965-69</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">04</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Mr. G. M. A Inkiriwang</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1969-74</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">05</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Dr. H. Kandou</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1974-77</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">06</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. W. J. Waworoentoe</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1977-86</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">07</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Drs. R. S. Tangkudung</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1986-95</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">08</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Dr. Ir. J. Paruntu</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">1995-04</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">09</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Dr. Ir. L. W. Sondakh</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">2004-08</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">10</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Dr. D. A. Rumokoy</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">2008-14</span>
+                </div>
+                <div class="flex items-center justify-between p-3 border-b border-slate-800">
+                    <span class="text-xs font-bold text-slate-500 w-8">11</span>
+                    <span class="flex-1 font-semibold text-sm">Prof. Dr. Ir. Ellen J. Kumaat</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-slate-800 rounded-md text-slate-400">2014-22</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-blue-600/20 rounded-xl border border-blue-500/30">
+                    <span class="text-xs font-bold text-blue-500 w-8">12</span>
+                    <span class="flex-1 font-bold text-sm text-white">Prof. Dr. Ir. Oktovian B.A. Sompie</span>
+                    <span class="text-[10px] px-2 py-0.5 bg-blue-600 rounded-md text-white font-bold">2022 - SKRG</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="py-10 px-10 text-center bg-slate-950">
+            <p class="text-[10px] font-bold uppercase tracking-[0.5em] text-slate-600">
+                Universitas Sam Ratulangi Manado • 2026 • Unggul & Berbudaya
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
